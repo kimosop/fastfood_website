@@ -6,11 +6,12 @@ body{
   text-align:center;
   font-size: 48px
 }
-.jumbotron {
+.jumbotron#banner {
   background-color: #e9ecef;
   color: white;
   background-image:url("../img/landing.jpg");
   background-size: 1800px 700px;
+  border-radius:0;
   
 }
 .breakfast {
@@ -52,4 +53,76 @@ body{
 .fastfood {
   margin-top: 100px;
 }
-    
+.jumbotron#menu {
+  color: white;
+  background-image:url("../img/foodsBg.jpg");
+  height:600px;
+  margin-top:50px;
+  border-radius:0;
+}
+.jumbotron#inner {
+  border-radius:0;
+  background-color:white;
+  margin-top:30px;
+  height:400px;
+  padding:0;
+  margin-bottom:0;
+
+}
+/*----- Tabs -----*/
+.tabs {
+	width:100%;
+  display:inline-block;
+  margin-top:0px;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+	.tab-links:after {
+	display:block;
+	clear:both;
+	content:'';
+}
+
+.tab-links li {
+	margin:0px 5px;
+	float:left;
+	list-style:none;
+}
+
+.tab-links a {
+	padding:15px 110px;
+	display:inline-block;
+	border-radius:0px 0px 0px 0px;
+	background:#e9ecef;
+	font-size:16px;
+	font-weight:600;
+	color:#4c4c4c;
+	transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+	background:#a7cce5;
+	text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+	background:#fff;
+	color:#4c4c4c;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding:15px;
+	border-radius:3px;
+	box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+	background:#fff;
+}
+
+.tab {
+	display:none;
+}
+
+.tab.active {
+	display:block;
+}
