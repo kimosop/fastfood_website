@@ -1,0 +1,55 @@
+body{
+  font-family:'Poppins', sans-serif;
+}
+
+#intro{
+  text-align:center;
+  font-size: 48px
+}
+.jumbotron {
+  background-color: #e9ecef;
+  color: white;
+  background-image:url("../img/landing.jpg");
+  background-size: 1800px 700px;
+  
+}
+.breakfast {
+  position: relative;
+  text-align: center;
+}
+.centered-breakfast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+.lunch {
+  position: relative;
+  text-align: center;
+}
+.centered-lunch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+.dinner {
+  position: relative;
+  text-align: center;
+}
+.centered-dinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+.banners {
+  margin-top: -33px;
+}
+.fastfood {
+  margin-top: 100px;
+}
+    
