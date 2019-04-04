@@ -184,5 +184,11 @@ li.active a, li.active a:hover {
   cursor: pointer;
 }
 
-
+.jumbotron#socialmedia {
+  background: #f15b29;
+  color: white;
+  height:400px;
+  margin-top:-32px;
+  border-radius:0;
+}
 
