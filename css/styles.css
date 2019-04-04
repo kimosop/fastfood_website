@@ -17,6 +17,7 @@ body{
 .breakfast {
   position: relative;
   text-align: center;
+  margin: 0;
 }
 .centered-breakfast {
   position: absolute;
@@ -28,6 +29,7 @@ body{
 .lunch {
   position: relative;
   text-align: center;
+  margin: 0;
 }
 .centered-lunch {
   position: absolute;
@@ -39,6 +41,7 @@ body{
 .dinner {
   position: relative;
   text-align: center;
+  margin: 0;
 }
 .centered-dinner {
   position: absolute;
@@ -71,19 +74,11 @@ body{
 }
 /*----- Tabs -----*/
 .tabs {
-	width:100%;
-  display:inline-block;
   margin-top:0px;
 }
 
 /*----- Tab Links -----*/
 /* Clearfix */
-	.tab-links:after {
-	display:block;
-	clear:both;
-	content:'';
-}
-
 .tab-links li {
 	margin:0px 5px;
 	float:left;
@@ -93,7 +88,6 @@ body{
 .tab-links a {
 	padding:15px 110px;
 	display:inline-block;
-	border-radius:0px 0px 0px 0px;
 	background:#e9ecef;
 	font-size:16px;
 	font-weight:600;
@@ -102,7 +96,7 @@ body{
 }
 
 .tab-links a:hover {
-	background:#a7cce5;
+	background:#f15b29;
 	text-decoration:none;
 }
 
@@ -111,12 +105,15 @@ li.active a, li.active a:hover {
 	color:#4c4c4c;
 }
 
-/*----- Content of Tabs -----*/
+/*----- Tab Content -----*/
 .tab-content {
-	padding:15px;
-	border-radius:3px;
-	box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-	background:#fff;
+	padding:20px;
+	justify-content:space-evenly;
+  background:#fff;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+ 
 }
 
 .tab {
@@ -125,4 +122,15 @@ li.active a, li.active a:hover {
 
 .tab.active {
 	display:block;
+}
+.comments {
+  width: 950px;
+  padding: 100px;
+  border: 1px solid gray;
+  box-shadow: #4c4c4c;
+  margin:auto;
+}
+.line{
+  border-left: 6px solid gray;
+  height: 70px;
 }
