@@ -141,4 +141,48 @@ li.active a, li.active a:hover {
   height:300px;
   margin-top:50px;
   border-radius:0;
+}
+
+#subscribe-h3{
+  text-align: center;
+  margin-top:3opx;
+}
+
+.input {
+  justify-content: space-around;
+  margin-top:50px;
+}
+
+
+.button {
+  height: 44px;
+  border: none;
+}
+
+  
+#email {
+  width: 600px;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0 0 5px;
+  opacity:0.5;
+}
+
+
+#submit {
+  width: 100px;
+  height: 46px;
+  background: #f15b29;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  letter-spacing: 1px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+
 
