@@ -1,10 +1,11 @@
+/* body styling---fonts applied on webpage*/
 body{
-  font-family:'Poppins', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 
 #intro{
   text-align:center;
-  font-size: 48px
+  font-size: 40px
 }
 .jumbotron#banner {
   background-color: #e9ecef;
@@ -14,11 +15,31 @@ body{
   border-radius:0;
   
 }
-.breakfast {
-  position: relative;
+
+#promos{
   text-align: center;
-  margin: 0;
 }
+
+.fastfood-border{
+  box-shadow: -10px -10px 12px rgb(216, 207, 207);
+  padding: 10px;
+  border: 5px lightgrey
+}
+#drinks-border{
+  box-shadow: -10px -10px 8px rgb(216, 207, 207);
+  padding: 10px;
+  border: 1px lightgrey
+}
+.happy-hour{
+  padding:36px;
+  background: #e4e5e7;
+  width:100%
+}
+.party-time{
+  padding:36px;
+  background: #f15b29;
+}
+
 .centered-breakfast {
   position: absolute;
   top: 50%;
@@ -26,11 +47,7 @@ body{
   transform: translate(-50%, -50%);
   color:white;
 }
-.lunch {
-  position: relative;
-  text-align: center;
-  margin: 0;
-}
+
 .centered-lunch {
   position: absolute;
   top: 50%;
@@ -38,11 +55,7 @@ body{
   transform: translate(-50%, -50%);
   color:white;
 }
-.dinner {
-  position: relative;
-  text-align: center;
-  margin: 0;
-}
+
 .centered-dinner {
   position: absolute;
   top: 50%;
@@ -50,13 +63,34 @@ body{
   transform: translate(-50%, -50%);
   color:white;
 }
+
+
 .banners {
   margin-top: -33px;
+}
+#lunch-effect:hover{
+  opacity:0.5;
+}
+#dinner-effect:hover{
+  opacity:0.5;
+}
+#breakfast-effect:hover{
+  opacity:0.5;
+}
+
+.centered-lunch:hover {
+  color:black;
+
 }
 .fastfood {
   margin-top: 100px;
 }
-.jumbotron#menu {
+
+
+
+/*menu*/
+
+.container-fluid#menu {
   color: white;
   background-image:url("../img/foodsBg.jpg");
   height:600px;
@@ -72,21 +106,29 @@ body{
   margin-bottom:0;
 
 }
-/*----- Tabs -----*/
+/* Tabs */
 .tabs {
-  margin-top:0px;
+  padding: 100px;
+  margin-top:30px;
+  justify-items: center;
+  
+}
+#tab1 {
+  padding: 50px;
+  /* margin-top:-30px; */
 }
 
-/*----- Tab Links -----*/
-/* Clearfix */
+/* Tab Links */
+
 .tab-links li {
-	margin:0px 5px;
+	margin:0px 10px;
 	float:left;
-	list-style:none;
+  list-style:none;
+  background-color: white;
 }
 
 .tab-links a {
-	padding:15px 110px;
+	padding:15px 90px;
 	display:inline-block;
 	background:#e9ecef;
 	font-size:16px;
@@ -107,12 +149,11 @@ li.active a, li.active a:hover {
 
 /*----- Tab Content -----*/
 .tab-content {
-	padding:20px;
-	justify-content:space-evenly;
-  background:#fff;
-  margin-left: auto;
-  margin-right: auto;
-  display:flex;
+  padding:0px;
+  margin-left: 50px;
+	justify-content:space-around;
+  display:inline-block;
+  background-color: white;
  
 }
 
@@ -127,14 +168,16 @@ li.active a, li.active a:hover {
   width: 950px;
   padding: 100px;
   border: 1px solid gray;
-  box-shadow: #4c4c4c;
+  box-shadow: 20px #4c4c4c;
   margin:auto;
+  margin-top:40px;
 }
 .line{
   border-left: 6px solid gray;
   height: 70px;
 }
 
+/* jumbotron id subscribe styling*/
 .jumbotron#subscribe {
   color: white;
   background-image:url("../img/subscribe.jpg");
@@ -159,7 +202,7 @@ li.active a, li.active a:hover {
   border: none;
 }
 
-  
+ /* email form styling*/ 
 #email {
   width: 600px;
   background: #FDFCFB;
@@ -171,7 +214,7 @@ li.active a, li.active a:hover {
   opacity:0.5;
 }
 
-
+/* submit button styling*/
 #submit {
   width: 100px;
   height: 46px;
@@ -184,11 +227,75 @@ li.active a, li.active a:hover {
   cursor: pointer;
 }
 
-.jumbotron#socialmedia {
+/* footer styling*/
+
+.footer {
   background: #f15b29;
-  color: white;
+  
   height:400px;
   margin-top:-32px;
   border-radius:0;
 }
 
+.socialmedia-box {
+  width: 500px;
+  padding: 100px;
+  border: none;
+  box-shadow: #4c4c4c;
+  margin:auto;
+  justify-content: center;
+}
+#menu-h3{
+  text-align: center;
+  color:white;
+
+}
+#menu-h5{
+  text-align: center;
+  color:white;
+}
+.footer-logos{
+  display:inline-flex;
+  justify-content: center;
+  margin-top:50px;
+}
+#logos {
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+  margin:0;
+  padding:0;
+  display:flex;
+  color:#f15b29;
+}
+#logos li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+#logos li a .fa {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color:#f15b29;
+  transition: .5s;
+}
+#copyright{
+  text-align: center;
+  margin-top: 70px;
+  color:white;
+}

@@ -2,7 +2,7 @@
     <html>
       <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <script src="js/jquery-3.3.1.js"></script>
@@ -21,39 +21,40 @@
         </div>
         <!--Breakfast Lunch Dinner-->
         <div class="banners">
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-md-3">
-                <div class="breakfast">
-                  <img src="img/breakfast.jpg">
-                  <p class="centered-breakfast">Breakfast</p>
-                </div>   
-              </div>
-              <div class="col-md-3">
-                <div class="lunch">
-                  <img src="img/lunch.jpg">
-                  <p class="centered-lunch">Lunch</p>
-                </div>   
-              </div>
-              <div class="col-md-3">
-                <div class="dinner">
-                  <img src="img/dinner.jpg" alt="dinner">
-                  <p class="centered-dinner">Dinner</p>
-                </div>   
-              </div>
+          <div class="row">
+            <div class="col-lg-3" id="promos">
+              <h4 class="happy-hour" id="myModal">Happy Hour!</h4>
+              <h4 class="party-time" id="myModal">Party Time!</h4>
             </div>
+              
+            <div class="col-lg-3" id="breakfast-effect">
+              <img src="img/breakfast.jpg">
+              <p class="centered-breakfast"><strong>Breakfast</strong></p>
+            </div>
+                
+            <div class="col-lg-3" id="lunch-effect">
+              <img src="img/lunch.jpg">
+              <p class="centered-lunch"><strong>Lunch</strong></p>
+            </div>
+                
+            <div class="col-lg-3" id="dinner-effect">
+              <img src="img/dinner.jpg" alt="dinner">
+              <p class="centered-dinner"><strong>Dinner</strong></p>
+            </div>  
+          </div>         
         </div>
         <!--fastfood and drinks-->
         <div class="fastfood">
           <div class="row">
-            <div class="col-md-2"></div>
-              <div class="col-md-4">
+            <div class="col-lg-1"></div>
+              <div class="col-lg-4">
                 <div class="fastfood-border">
                   <img src="img/fastFood1.jpg" alt="fast food 1">
                   <img src="img/fastFood2.jpg" alt="fast food 2">
                 </div> 
               </div>
-            <div class="col-md-4">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
               <div class="fastfood-description">
                 <br>
                 <br>
@@ -73,8 +74,8 @@
         <br>
         <div class="drinks">
             <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-4">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-5">
                 <div class="drinks-description">
                   <br>
                   <br>
@@ -84,37 +85,38 @@
                   <br>
                   <p id="drinks-p">sour, slushy, creamy, lucious, delightful, satisfying, fullfilling, refreshing, fills all your senses, 
                     delicious, mouth watering, you will fall in love, fruity tooty, tangy, tasteful, sweet, a pinch of lemon, tempting, dangerous</p>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                <img src="img/drink1.jpg" alt="drink 1">
-                <img id="drink2" src="img/drink2.jpg" alt="drink 2">
-              </div>
-            </div>
-          </div>
-          <div class="jumbotron" id="menu">
-            <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-10">
-                <div class="jumbotron" id="inner">
-                    <div class="tabs">
-                        <ul class="tab-links">
-                          <li class="active"><a href="#tab1">Fast Food</a></li>
-                          <li><a href="#tab2">Drinks</a></li>
-                          <li><a href="#tab3">Chicken</a></li>
-                          <li><a href="#tab4">Rice</a></li>
-                        </ul>
-                        <div class="tab-content">
-                          <div id="tab1" class="tab active">
-                            <img src="img/chickenBurger.jpg" alt="Chicken Burger">
-                            <img src="img/beefBurger.jpg" alt="beef Burger">
-                            <img src="img/chickenPizza.jpg" alt="Chicken Pizza">
-                          </div>  
-                        </div>
-                    </div>
                 </div>
               </div>
-              <div class="col-md-1"></div> 
+              <div class="col-lg-0"></div>
+                <div class="col-lg-5" id="drinks-border">
+                  <img src="img/drink1.jpg" alt="drink 1">
+                  <img id="drink2" src="img/drink2.jpg" alt="drink 2">
+                </div>
+            </div>
+          </div>
+          <div class="container-fluid" id="menu">
+            <div class="tabs">
+                <ul class="tab-links">
+                  <li class="active"><a href="#tab1">Fast Food</a></li>
+                  <li><a href="#tab2">Drinks</a></li>
+                  <li><a href="#tab3">Chicken</a></li>
+                  <li><a href="#tab4">Rice</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="tab1" class="tab active">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      <img src="img/chickenBurger.jpg" alt="Chicken Burger">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="img/beefBurger.jpg" alt="beef Burger">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="img/chickenPizza.jpg" alt="Chicken Pizza">
+                      </div>
+                    </div>
+                  </div>  
+                </div>
             </div>
           </div>
           <div class="comment-box">
@@ -127,8 +129,8 @@
           <div class="jumbotron" id="subscribe">
             <h3 id="subscribe-h3">Get Our Daily Food Items Delivered To Your Email</h3>
             <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-md-8">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-8">
                 <div class="input">
                   <input type="email" class="button" id="email" name="email" placeholder="chepkoitkimosop@gmail.com">
                   <input type="submit" class="button" id="submit" value="subscribe">
@@ -138,7 +140,21 @@
             </div>
           </div>
 
-          <div class="jumbotron" id="socialmedia">
+          <div class="footer" id="socialmedia">
+              <div class="socialmedia-box">
+                <h3 id="menu-h3"><img src="img/footerlogos/logo_white.png" alt="our logo">MENU</h3>
+                <h5 id="menu-h5">That's What We Are!</h5>
+                <div class="footer-logos">
+                    <ul id="logos">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                      </ul>
+                </div>
+                <p id="copyright">2019 Restaurant Menu.</p>
+                    
+              </div>
             
           </div>
       </body>
